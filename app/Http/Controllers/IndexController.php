@@ -1,18 +1,13 @@
 <?php
 
 namespace App\Http\Controllers;
-use Request;
+use Illuminate\Http\Request;
 
 class IndexController extends Controller
 {
     public function index()
     {
-        $data = [
-            'ビジネスA' => 'ビジネスの説明が入ります。ビジネスの説明が入ります。ビジネスの説明が入ります。ビジネスの説明が入ります。',
-            'ビジネスB' => 'ビジネスの説明が入ります。ビジネスの説明が入ります。ビジネスの説明が入ります。ビジネスの説明が入ります。',
-            'ビジネスC' => 'ビジネスの説明が入ります。ビジネスの説明が入ります。ビジネスの説明が入ります。ビジネスの説明が入ります。',
-        ];
-        return view('home', ['data' => $data]);
+        return view('home');
     }
     public function post()
     {
@@ -21,7 +16,7 @@ class IndexController extends Controller
 
 	public function write1(Request $moji)
 	{
-	    $data1 = $moji::all();
+	    $data1 = $moji->all();
 	    return view('content',compact('data1'));
 	}
 

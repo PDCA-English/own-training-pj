@@ -12,16 +12,14 @@
         <input type="text" id="name" name="user_name" placeholder="氏名を入力してください"/>
       </div>
       <div class="training-options">
-        <form action="training-contents" method="post">
           <p>研修選択
           <select name="training-number">
-          <option value="tr1">１：○○○○○○○</option>
-          <option value="tr2">２：○○○○○○○</option>
-          <option value="tr3">３：○○○○○○○</option>
-          <option value="tr4">４：○○○○○○○</option>
+          <option value="１：○○○○○○○">１：○○○○○○○</option>
+          <option value="２：○○○○○○○">２：○○○○○○○</option>
+          <option value="３：○○○○○○○">３：○○○○○○○</option>
+          <option value="４：○○○○○○○">４：○○○○○○○</option>
           </select></p>
-          <button type="submit" class="button" onclick="location.href='./content'">研修開始</button>
-        </form>
+          <button type="submit" class="button">研修開始</button>
       </div>
     </form>
   </div>

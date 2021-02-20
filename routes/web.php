@@ -8,8 +8,6 @@ use App\Http\Controllers\ContentController;
 
 Route::get('/', [IndexController::class, 'index']);
 Route::post('/', [IndexController::class, 'post']);
-Route::get('/content', [ContentController::class, 'content']);
-Route::get('/content', [ContentController::class, 'index']);
+Route::get('/content', [IndexController::class, 'write1']);
 Route::get('/finish', [FinishController::class, 'index']);
-
-Route::post('/training-contents','IndexController@write1');
+Route::get('/mail', 'App\Http\Controllers\MailSendController@index');
