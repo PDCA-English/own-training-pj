@@ -19,4 +19,10 @@ class IndexController extends Controller
         return view('finish');
     }
 
+	public function write1(Request $moji)
+	{
+	    $data1 = $moji::all();
+	    return view('content',compact('data1'));
+	}
+
 }

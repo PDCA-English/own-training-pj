@@ -11,3 +11,5 @@ Route::post('/', [IndexController::class, 'post']);
 Route::get('/content', [ContentController::class, 'content']);
 Route::get('/content', [ContentController::class, 'index']);
 Route::get('/finish', [FinishController::class, 'index']);
+
+Route::post('/training-contents','IndexController@write1');

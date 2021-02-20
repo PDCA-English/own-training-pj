@@ -4,7 +4,7 @@
 
 @section('main')
 <main class="finish">
-  <h1>ここに選択した研修項目を表示したい</h1>
+  <h1>入力した文字は、{{$data1}}</h1>
   <br>
   <iframe width="1920" height="800" src="https://www.youtube.com/embed/BHACKCNDMW8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
   <p>質問番号を選んでください</p>
